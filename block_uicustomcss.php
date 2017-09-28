@@ -56,7 +56,8 @@ class block_uicustomcss extends block_base {
 				}}, 40);</script> 
 				<style>' .  
 					str_replace ("<", "", $this->config->csscode ) . 
-					' #sidebar .block_uicustomcss {display:none; } body.editing #sidebar .block_uicustomcss {display:block; }  
+					// #sidebar .block_uicustomcss {display:none; } body.editing #sidebar .block_uicustomcss 
+					' .block_uicustomcss {display:none; } body.editing .block_uicustomcss {display:block; }  
 				</style>';
 		
 		} // end if config?
